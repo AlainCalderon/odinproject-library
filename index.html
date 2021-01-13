@@ -1,0 +1,75 @@
+<!---->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project:Library</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="lib.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+        
+    </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Book Room</span>
+        </div>
+    </nav>
+
+    <main class="container-fluid">
+    <section class="container py-5 text-center mt-5">
+        <header  class="h1">The Library</header>
+        <blockquote class="blockquote">
+            <p>“I find television very educating. Every time somebody turns on the set, I go into the other room and read a book.”</p>
+            <p>An OdinProject assignment.</p>
+        </blockquote>
+        <button name="newBook" type="button" class="btn btn-info btn-lg mx-auto" data-bs-toggle="modal" data-bs-target="#formModal">Add book</button>
+
+            <div class="modal fade"  id="formModal">
+                <form class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+
+                        <div class="modal-header bg-dark bg-gradient">
+                            <h5 class="modal-title text-center">Library Management Form</h5>
+                        </div>
+
+                        <div class="modal-body">
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="bookTitle">
+                                <label for="bookTitle" class="h5">Book Name</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="authorName">
+                                <label for="authorName" class="h5">Author</label>
+                            </div>
+
+                            <div class="form-check form-switch mb-3">
+                                <label for="hasRead" class="form-check-label">Have you read this book</label>
+                                <input type="checkbox" class="form-check-input" id="hasRead">
+                            </div>
+                             
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            <button id="addBookBtn" type="button" class="btn btn-primary">Submit Book</button>
+
+                        </div>    
+
+                        </div>
+                    </div>   
+                </form>
+            </div>
+    </section>
+
+    <div  class="container-fluid">
+        <div class="row row-cols-sm-2 row-cols-md-3 book-area">
+        </div>
+    </div>
+
+    </main>
+
+<script src="js/bootstrap.bundle.js"></script>
+<SCript src="jsLib.js"></SCript>
+</body>
+</html>
